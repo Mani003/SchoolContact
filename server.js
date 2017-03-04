@@ -4,6 +4,7 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient
 
 app.set('view engine', 'ejs')
+app.set('port', (process.env.PORT || 5000));
 /*app.get('/', (req, res) => {
  // res.send('hello world')
    res.sendFile(__dirname + '/index.html')
